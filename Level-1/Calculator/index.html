@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <table border="2px">
+        <thead>
+            <tr>
+                <th colspan="4">Calculator</th>
+            </tr>
+            <tr>
+                <td colspan="4"><input id="value" type="math" placeholder="Enter Value"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input class="value" type="button" value="1" onclick="add1(1)"></td>
+                <td><input class="value" type="button" value="2" onclick="add1(2)"></td>
+                <td><input class="value" type="button" value="3" onclick="add1(3)"></td>
+                <td><input class="value1" type="button" value="+" onclick="addp()"></td>
+            </tr>
+            <tr>
+                <td><input class="value" type="button" value="4" onclick="add1(4)"></td>
+                <td><input class="value" type="button" value="5" onclick="add1(5)"></td>
+                <td><input class="value" type="button" value="6" onclick="add1(6)"></td>
+                <td><input class="value1" type="button" value="-" onclick="addm()"></td>
+            </tr>
+            <tr>
+                <td><input class="value" type="button" value="7" onclick="add1(7)"></td>
+                <td><input class="value" type="button" value="8" onclick="add1(8)"></td>
+                <td><input class="value" type="button" value="9" onclick="add1(9)"></td>
+                <td><input class="value1" type="button" value="*" onclick="addmu()"></td>
+            </tr>
+            <tr>
+                <td><input class="value" type="button" value="0" onclick="add1(0)"></td>
+                <td><input class="value1" type="button" value="/" onclick="addd()"></td>
+                <td><input class="value1" type="button" value="=" onclick="adde()"></td>
+                <td><input class="value2" type="button" value="C" onclick="adds()"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
