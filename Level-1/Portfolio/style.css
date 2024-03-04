@@ -1,10 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     margin: 0px;
-    scroll-behavior: smooth;
 }
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 img {
     width: 100%;
@@ -19,6 +44,7 @@ header {
     padding: 0px 70px;
     background: rgb(125, 140, 211);
     box-shadow: 0px 3px 10px 0px rgba(34, 34, 34, 0.493);
+    z-index: 9999;
 }
 
 header a {
@@ -50,7 +76,7 @@ header ul>li>a:hover {
 
 .dipanshu {
     background: rgb(228, 228, 228);
-    height: 50vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     padding: 0px 50px;
@@ -63,17 +89,86 @@ header ul>li>a:hover {
 }
 
 .dipanshu-img {
-    height: 250px;
+    height: 100vh;
 }
 
 .social-media,
 .skills,
-.resume,
-.contact {
-    height: 50vh;
-    margin-top: 1rem;
+.resume {
+    height: 100vh;
     display: grid;
     place-items: center;
     font-size: 30px;
     background: orange;
+}
+
+.social-media {
+    background: violet;
+}
+
+.skills {
+    background-color: aqua;
+}
+
+.resume {
+    background-color: beige;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 500;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.contact-form {
+    padding: 20px 30px;
+    border-radius: 20px;
+    width: 50vw;
+    box-shadow: 0px 2px 20px 0px rgb(160, 103, 103);
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 5px;
+}
+
+.form-control label {
+    font-size: 16px;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+.form-control button{
+    background-color: aquamarine;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control button:hover{
+    background-color: rgb(111, 218, 173);
 }

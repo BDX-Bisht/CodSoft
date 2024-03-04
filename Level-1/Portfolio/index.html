@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <h1 data-aos="fade-up"><a href="#">Dipanshu Bisht</a></h1>
+        <h1 data-aos="fade-up"><a href="#dipanshu">Dipanshu Bisht</a></h1>
         <ul>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -22,40 +22,62 @@
     </header>
 
     <!-------------------------- First Section ---------------------->
-    <div class="dipanshu">
+    <div id="dipanshu" class="dipanshu">
         <h2 id="autotyping" data-aos="fade-up"></h2>
         <div class="dipanshu-img">
-            <img src="./images/dipanshu.png" alt="">
+            <img data-aos="fade-up" src="./assets/dipanshu.png" alt="">
         </div>
     </div>
 
-    <div data-aos="fade-up" class="skills" id="skills">Skills</div>
-    <div data-aos="fade-up" class="resume" id="resume">Resume</div>
-    <div data-aos="fade-up" class="social-media" id="social-media">Social Media</div>
-    <div data-aos="fade-up" class="contact" id="contact">Contact</div>
+    <div class="skills" id="skills">
+        <h1 data-aos="fade-up">Skills</h1>
+    </div>
+    <div class="resume" id="resume">
+        <h1 data-aos="fade-up">Resume</h1>
+        <object data="./assets/MyResume.pdf" type="application/pdf" style="width: 100%;height: 100vh;"></object>
+        <button>
+            <a href="./assets/myresume.pdf" download>Download Resume</a>
+        </button>
+    </div>
+    <div class="social-media" id="social-media">
+        <h1 data-aos="fade-up">Social Media</h1>
+    </div>
+    <div class="contact" id="contact">
+        <h1 data-aos="fade-up">Contact Form</h1>
+        <div class="contact-form" data-aos="fade-up">
+            <form action="">
+                <div class="form-control">
+                    <label for="name">Enter Name :-</label>
+                    <input type="text" name="name" placeholder="Enter Name"><br>
+                </div>
+                <div class="form-control">
+                    <label for="phone">Phone Number :-</label>
+                    <input type="number" name="phone" placeholder="Enter Phone No."><br>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email :-</label>
+                    <input type="email" name="email" placeholder="Enter Email"><br>
+                </div>
+                <div class="form-control">
+                    <label for="message">Message :-</label>
+                    <textarea name="message" cols="30" rows="5" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="form-control">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © <span id="year"></span> Dipanshu Bisht. All Rights Reserved.</p>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"
         integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        var app = document.getElementById('autotyping');
-
-        var typewriter = new Typewriter(app, {
-            loop: true
-        });
-
-        typewriter.typeString('Hii, I am <br>Web Developer.')
-            .pauseFor(500).deleteChars(14)
-            .typeString('MERN Stack Developer.')
-            .pauseFor(2500)
-            .start();
-    </script>
-
-    <script>
-        AOS.init();
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
