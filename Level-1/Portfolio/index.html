@@ -1,16 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Dipanshu Bisht</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Dipanshu Bisht</h1>
+        <h1 data-aos="fade-up"><a href="#">Dipanshu Bisht</a></h1>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
-    
+
+    <!-------------------------- First Section ---------------------->
+    <div class="dipanshu">
+        <h2 id="autotyping" data-aos="fade-up"></h2>
+        <div class="dipanshu-img">
+            <img src="./images/dipanshu.png" alt="">
+        </div>
+    </div>
+
+    <div data-aos="fade-up" class="skills" id="skills">Skills</div>
+    <div data-aos="fade-up" class="resume" id="resume">Resume</div>
+    <div data-aos="fade-up" class="social-media" id="social-media">Social Media</div>
+    <div data-aos="fade-up" class="contact" id="contact">Contact</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"
+        integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var app = document.getElementById('autotyping');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+
+        typewriter.typeString('Hii, I am <br>Web Developer.')
+            .pauseFor(500).deleteChars(14)
+            .typeString('MERN Stack Developer.')
+            .pauseFor(2500)
+            .start();
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
