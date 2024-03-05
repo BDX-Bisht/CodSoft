@@ -1,12 +1,18 @@
 
+body{
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 table {
-    margin: auto;
     font-size: 30px;
-    margin-top: 5rem;
     padding: 10px;
     border-radius: 7px;
-    box-shadow: 0px 0px 22px 4px black;
-    background: #e3dede;
+    box-shadow: 0px 5px 15px 0px rgba(94, 94, 94, 0.541);
+    background: #e6e6e6;
 }
 input{
     width: 100%;

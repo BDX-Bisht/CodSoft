@@ -12,6 +12,11 @@ body {
 * {
     scrollbar-width: thin;
     scrollbar-color: #888 #f1f1f1;
+    --header-color: #22223b;
+    --dipanshu: #c9ada7;
+    --about: #cbc0d3;
+    --skills: #f2e9e4;
+    --social-media: #c9ada7;
 }
 
 *::-webkit-scrollbar {
@@ -35,14 +40,21 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background: var(--about);
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 header {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 70px;
-    background: rgb(125, 140, 211);
+    background: var(--header-color);
     box-shadow: 0px 3px 10px 0px rgba(34, 34, 34, 0.493);
     z-index: 9999;
 }
@@ -61,6 +73,7 @@ header h1 {
 header ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     gap: 60px;
 }
 
@@ -75,44 +88,73 @@ header ul>li>a:hover {
 }
 
 .dipanshu {
-    background: rgb(228, 228, 228);
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    padding: 0px 50px;
-    grid-template-columns: repeat(2, 1fr);
+    background: var(--dipanshu);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 150px;
 }
 
-.dipanshu>h2 {
+.name-section>h1 {
     font-size: 50px;
+    color: var(--header-color);
+}
+
+.name-section>h2 {
+    font-size: 40px;
     font-weight: 500;
+    color: var(--header-color);
+}
+
+.name-section button {
+    background: var(--header-color);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.name-section button:hover {
+    background-color: var(--skills);
 }
 
 .dipanshu-img {
-    height: 100vh;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .social-media,
 .skills,
-.resume {
+.about {
     height: 100vh;
     display: grid;
     place-items: center;
     font-size: 30px;
-    background: orange;
 }
 
 .social-media {
-    background: violet;
+    background: var(--social-media);
 }
 
 .skills {
-    background-color: aqua;
+    background-color: var(--skills)
 }
 
-.resume {
-    background-color: beige;
-    grid-template-columns: repeat(3, 1fr);
+.about {
+    background-color: var(--about);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-me h1 {
+    font-size: 60px;
+}
+
+.about-me p {
+    font-size: 22px;
 }
 
 .contact {
@@ -128,7 +170,7 @@ header ul>li>a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: blue;
+    background-color: var(--header-color);
     color: white;
 }
 
@@ -137,38 +179,4 @@ footer {
     border-radius: 20px;
     width: 50vw;
     box-shadow: 0px 2px 20px 0px rgb(160, 103, 103);
-}
-
-.form-control {
-    display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-    gap: 5px;
-}
-
-.form-control label {
-    font-size: 16px;
-}
-
-.form-control input,
-.form-control textarea {
-    border: 1px solid rgb(114, 114, 114);
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 14px;
-
-}
-
-.form-control button{
-    background-color: aquamarine;
-    border: none;
-    padding: 20px;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.form-control button:hover{
-    background-color: rgb(111, 218, 173);
 }
