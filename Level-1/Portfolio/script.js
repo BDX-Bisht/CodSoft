@@ -7,29 +7,22 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString("Hii, I am <br>Web Developer.")
-  .pauseFor(500)
+  .typeString("Web Developer")
+  .pauseFor(1000)
   .deleteChars(14)
-  .typeString("MERN Stack Developer.")
-  .pauseFor(2500)
+  .typeString("MERN Developer")
+  .pauseFor(1000)
+  .deleteChars(15)
+  .typeString("FrontEnd Developer")
+  .pauseFor(1000)
+  .deleteChars(19)
+  .typeString("BackEnd Developer")
   .start();
 
 document.getElementById("year").innerHTML = new Date().getUTCFullYear();
 
-const scrollFunction = () => {
-  let myNav = document.querySelector("header");
-  if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
-  ) {
-    myNav.style.position = "fixed";
-    myNav.style.width = "90%";
-} else {
-    myNav.style.width = "auto";
-    myNav.style.position = "relative";
-}
-};
-
-window.onscroll = () => {
-  scrollFunction();
-};
+window.onload(() => {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+});

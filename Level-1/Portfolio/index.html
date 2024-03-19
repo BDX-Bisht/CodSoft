@@ -4,74 +4,248 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Dipanshu Bisht</title>
+    <title> Portfolio - Dipanshu Bisht</title>
+    <link rel="shortcut icon" href="./assets/title.svg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1 data-aos="fade-up"><a href="#dipanshu">Dipanshu Bisht</a></h1>
-        <ul>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#social-media">Social Media</a></li>
-        </ul>
-    </header>
-
-    <!-------------------------- First Section ---------------------->
-    <div id="dipanshu" class="dipanshu">
-        <div class="dipanshu-img">
-            <img data-aos="fade-up" src="./assets/dipanshu.png" alt="">
-        </div>
-        <div class="name-section">
-            <h1 data-aos="fade-up">CodeWithDipanshu</h1>
-            <h2 id="autotyping" data-aos="fade-up"></h2>
-            <button>
-                <a href="./assets/myresume.pdf" target="_" download="myresume.pdf">Download Resume</a>
+    <nav class="navbar navbar-expand-lg fixed-top py-3" data-bs-theme="dark">
+        <div class="container px-4 px-md-0">
+            <a class="navbar-brand" href="#dipanshu"><i class="fa-brands fa-codepen"></i> <i> Dipanshu Bisht</i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#dipanshu">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------- Name Section ---------------------->
+    <div id="dipanshu" class="container-fluid p-0">
+        <div class="container position-relative z-3 px-4 px-md-0">
+            <div class="row pt-5 gap-5 gap-md-0 flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-8">
+                    <h1 data-aos="fade-down" data-aos-duration="1000">Hi, <br>I'm <span
+                            class="text-primary">Dipanshu</span></h1>
+                    <h1 id="autotyping" data-aos="fade-down" data-aos-duration="1000"></h1>
+                    <a data-aos="fade-up" data-aos-duration="1000" href="./assets/myresume.pdf"
+                        class="btn btn-primary mt-4 mt-md-5 px-auto py-auto px-md-4 py-md-3" target="_"
+                        download="./assets/myresume.pdf">Download
+                        Resume</a>
+                    <div data-aos="fade-up" data-aos-duration="1000" class="links">
+                        <a href="https://github.com/BDX-Bisht" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dipanshu-bisht-5b02b8279/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.link/wfd9gd" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-flex">
+                    <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/dipanshu.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="graphics position-absolute top-0 w-100">
+            <video src="./assets/graphics.mp4" loop="true" autoplay="true" muted></video>
         </div>
     </div>
 
-    <div class="skills" id="skills">
-        <h1 data-aos="fade-up">Skills</h1>
-        <div class="skill_1">
-            <label for="skill1">ReactJs</label>
-            <progress value="50" max="100"></progress>
+    <!-------------------------- About Section ---------------------->
+    <div id="about" class="about px-3 px-md-0">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <h1 class="text-center">About</h1>
+            </div>
+            <div class="row mt-5 gap-5 gap-md-0">
+                <div class="col-12 col-md-6">
+                    <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/dipanshu.jpeg" alt="dipanshu-img">
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column gap-3 gap-md-5 justify-content-center">
+                    <h2 class="fs-1 fw-bold" data-aos="fade-down" data-aos-duration="1000">Hello</h2>
+                    <p data-aos="fade-up" data-aos-duration="1000">
+                        Aspiring full stack web developer with a strong educational background and a passion for
+                        creating dynamic and user-friendly web applications. Currently pursuing a web development
+                        course, I am skilled in both front-end and back-end technologies, including HTML, CSS,
+                        JavaScript, and Node.js as well as knowledge of famous framework like React. I am eager to
+                        apply my knowledge and expand my skills in a real-world setting.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="skill_1">
-            <label for="skill1">NodeJs</label>
-            <progress value="50" max="100"></progress>
-        </div>
-        <div class="skill_1">
-            <label for="skill1">PHP</label>
-            <progress value="50" max="100"></progress>
-        </div>
-    </div>
-    <div class="about" id="about">
-        <div class="dipanshu-img">
-            <img src="./assets/dipanshu.png" alt="loading...">
-        </div>
-        <div class="about-me">
-            <h1 data-aos="fade-up">About Me</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio corrupti sit, odit eum in, officia
-                adipisci qui eligendi voluptatum atque vitae, incidunt consequatur nobis aliquam molestias libero. Illo,
-                rerum sequi!</p>
-        </div>
-    </div>
-    <div class="social-media" id="social-media">
-        <h1 data-aos="fade-up">Social Media</h1>
     </div>
 
-    <footer>
-        <p>Copyright © <span id="year"></span> Dipanshu Bisht. All Rights Reserved.</p>
+    <!-------------------------- Skills Section ---------------------->
+    <div id="skills" class="skills">
+        <div class="d-flex justify-content-center">
+            <h1 class="text-center">Skills</h1>
+        </div>
+        <div class="container mt-4 d-flex flex-wrap gap-4 justify-content-center">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/html.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/css-3.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/js.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/php.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/mysql.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/react.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/node.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/express.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/mongodb.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/tailwind.png" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/bootstrap.png" alt="">
+        </div>
+    </div>
+
+    <!-------------------------- Projects Section ---------------------->
+    <div id="projects" class="projects">
+        <div class="d-flex justify-content-center">
+            <h1>Projects</h1>
+        </div>
+        <div class="container my-5">
+            <div class="row px-3 gap-4 px-md-0">
+                <div class="p-2 border border-light rounded-3 overflow-hidden" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <a class="text-decoration-none text-light" href="#" target="_blank">
+                        <div class="position-relative relative">
+                            <img class="rounded-3" src="./assets/e-commerce.png" alt="">
+                            <div class="position-absolute absolute">
+                                <h3>E-commerce</h3>
+                            </div>
+                        </div>
+                        <h4 class="text-center d-block d-md-none my-3">E-commerce</h4>
+                    </a>
+                </div>
+                <div class="p-2 border border-light rounded-3 overflow-hidden" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <a class="text-decoration-none text-light" href="#" target="_blank">
+                        <div class="position-relative relative">
+                            <img class="rounded-3" src="./assets/e-commerce.png" alt="">
+                            <div class="position-absolute absolute">
+                                <h3>E-commerce</h3>
+                            </div>
+                        </div>
+                        <h4 class="text-center d-block d-md-none my-3">E-commerce</h4>
+                    </a>
+                </div>
+                <div class="p-2 border border-light rounded-3 overflow-hidden" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <a class="text-decoration-none text-light" href="#" target="_blank">
+                        <div class="position-relative relative">
+                            <img class="rounded-3" src="./assets/e-commerce.png" alt="">
+                            <div class="position-absolute absolute">
+                                <h3>E-commerce</h3>
+                            </div>
+                        </div>
+                        <h4 class="text-center d-block d-md-none my-3">E-commerce</h4>
+                    </a>
+                </div>
+                <div class="p-2 border border-light rounded-3 overflow-hidden" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <a class="text-decoration-none text-light" href="#" target="_blank">
+                        <div class="position-relative relative">
+                            <img class="rounded-3" src="./assets/e-commerce.png" alt="">
+                            <div class="position-absolute absolute">
+                                <h3>E-commerce</h3>
+                            </div>
+                        </div>
+                        <h4 class="text-center d-block d-md-none my-3">E-commerce</h4>
+                    </a>
+                </div>
+                <div class="p-2 border border-light rounded-3 overflow-hidden" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <a class="text-decoration-none text-light" href="#" target="_blank">
+                        <div class="position-relative relative">
+                            <img class="rounded-3" src="./assets/e-commerce.png" alt="">
+                            <div class="position-absolute absolute">
+                                <h3>E-commerce</h3>
+                            </div>
+                        </div>
+                        <h4 class="text-center d-block d-md-none my-3">E-commerce</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- Contact Section ------------------------>
+    <div id="contact" class="contact">
+        <div class="d-flex justify-content-center">
+            <h1>Contact</h1>
+        </div>
+        <form action="https://formspree.io/f/xayrdjbd" method="post" class="px-3">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Email</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="3" class="form-control"
+                    placeholder="Enter Message" required></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="w-50 btn btn-primary" id="form-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!---------------------------- Footer Section ------------------------>
+    <footer class="d-flex flex-column align-items-center gap-4 mt-5 py-5">
+        <h1><i>Dipanshu Bisht</i></h1>
+        <div class="d-flex gap-4">
+            <a class="textdecoration-none" href="https://github.com/BDX-Bisht" target="_blank">
+                <i class="fs-4 fa-brands fa-github"></i>
+            </a>
+            <a class="text-decoration-none" href="https://www.linkedin.com/in/dipanshu-bisht-5b02b8279/"
+                target="_blank">
+                <i class="fs-4 fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="text-decoration-none" href="https://wa.link/wfd9gd" target="_blank">
+                <i class="fs-4 fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="mb-0">© <span id="year"></span> copyright. All right reserved</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"
         integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
