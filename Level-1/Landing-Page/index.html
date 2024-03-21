@@ -1,12 +1,346 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!------------------------------------ Header ---------------------------------------->
+    <nav class="navbar navbar-expand-lg shadow-lg">
+        <div class="container py-auto py-md-2">
+            <a class="navbar-brand fs-5 fw-semibold" href="#">
+                <span class="text-success">Landing</span>-Page
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-0 gap-md-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" aria-current="page" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" aria-current="page" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-success">Register Now <i
+                                class="ms-2 fa-solid fa-arrow-right"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------------ Home ---------------------------------------->
+    <div class="home">
+        <div class="container d-flex flex-column-reverse flex-md-row gap-2 gap-md-0 px-3 justify-content-between">
+            <div>
+                <h1>Lessons and insights <br>
+                    <span>from 8 years</span>
+                </h1>
+                <p class="mt-2">Where to grow your business as a photographer: site or social media?</p>
+                <button class="mt-2 mt-md-4 btn btn-success">
+                    Register
+                </button>
+            </div>
+            <div><img src="./assets/Illustration.png" alt="Illustration"></div>
+        </div>
+    </div>
+
+    <!------------------------------------ Clients ---------------------------------------->
+    <div class="clients">
+        <div class="container py-5">
+            <div>
+                <h3 class="fw-semibold text-center">Our Clients</h3>
+                <p class="fw-semibold text-center">We have been working with some Fortune 500+ clients</p>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+                <img src="./assets/Logo(1).png" alt="">
+                <img src="./assets/Logo-1.png" alt="">
+                <img src="./assets/Logo-2.png" alt="">
+                <img src="./assets/Logo-3.png" alt="">
+                <img src="./assets/Logo-4.png" alt="">
+                <img src="./assets/Logo(1).png" alt="">
+                <img src="./assets/Logo_1.png" alt="">
+            </div>
+            <div class="mt-5">
+                <h3 class="fw-semibold text-center">Manage your entire community <br>
+                    in a single system</h3>
+                <p class="fw-semibold text-center">Who is Nextcent suitable for?</p>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between gap-4 gap-md-5 mt-4">
+                <div class="card d-flex align-items-center flex-column gap-2 rounded-2 border py-4 px-4 shadow-lg">
+                    <img src="./assets/Icon(3).png" width="50" alt="">
+                    <h3 class="fw-semibold text-center">Membership Organisations</h3>
+                    <p class="text-center">Our membership management software provides full automation of membership
+                        renewals and payments
+                    </p>
+                </div>
+                <div class="card d-flex align-items-center flex-column gap-2 rounded-2 border py-4 px-4 shadow-lg">
+                    <img src="./assets/Icon(1).png" width="50" alt="">
+                    <h3 class="fw-semibold text-center">Membership Organisations</h3>
+                    <p class="text-center">Our membership management software provides full automation of membership
+                        renewals and payments
+                    </p>
+                </div>
+                <div class="card d-flex align-items-center flex-column gap-2 rounded-2 border py-4 px-4 shadow-lg">
+                    <img src="./assets/Icon(2).png" width="50" alt="">
+                    <h3 class="fw-semibold text-center">Membership Organisations</h3>
+                    <p class="text-center">Our membership management software provides full automation of membership
+                        renewals and payments
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex clients-2 flex-column flex-md-row mt-5 pt-0 pt-md-5">
+                <div>
+                    <img src="./assets/rafiki.png" alt="">
+                </div>
+                <div class="d-flex flex-column gap-1 justify-content-center">
+                    <h1 class="fw-semibold">The unseen of spending three years at Pixelgrade</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit eum deserunt facilis
+                        perferendis nam voluptas ipsam aliquid id ducimus, officiis ea adipisci ipsa blanditiis fugiat
+                        magni deleniti unde! Sed porro laborum culpa sit tempora aperiam odit quibusdam omnis ipsa? Iste
+                        consequatur deleniti facere voluptatibus ducimus illo enim eius ullam? Quasi odit nostrum
+                        dignissimos nihil.</p>
+                    <button class="btn btn-success">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------ Another ---------------------------------------->
+    <div class="container py-4">
+        <div class="row py-5 another">
+            <div class="col-12 col-md-6">
+                <h2 class="fw-semibold">Helping a local <br><span>business reinvent itself</span>
+                </h2>
+                <p class="my-3">We reached here with our hard work and dedication</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col d-flex justify-content-start justify-md-content-center align-items-center gap-3">
+                        <div>
+                            <img src="./assets/Icon.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold mb-0">2,245,341</h3>
+                            <p class="mb-0">Members</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col mt-4 mt-md-0 d-flex justify-content-start justify-md-content-center align-items-center gap-3">
+                        <div>
+                            <img src="./assets/Icon-2.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold mb-0">2,245,341</h3>
+                            <p class="mb-0">Members</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col d-flex justify-content-start justify-md-content-center align-items-center gap-3">
+                        <div>
+                            <img src="./assets/Icon-1.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold mb-0">2,245,341</h3>
+                            <p class="mb-0">Members</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col mt-4 mt-md-0 d-flex justify-content-start justify-md-content-center align-items-center gap-3">
+                        <div>
+                            <img src="./assets/Icon-3.png" alt="">
+                        </div>
+                        <div>
+                            <h3 class="fw-bold mb-0">2,245,341</h3>
+                            <p class="mb-0">Members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex clients-2 flex-column-reverse flex-md-row gap-4 gap-md-0">
+            <div class="d-flex flex-column justify-content-center">
+                <h1 class="fw-semibold">How to design your site footer like we did</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, molestias. Sequi ducimus odit
+                    qui, nostrum laboriosam quasi. Architecto deleniti officiis dolorem omnis delectus deserunt tenetur
+                    eligendi, sapiente harum quaerat ut, dolorum natus corporis quibusdam eveniet expedita praesentium
+                    blanditiis eos? Quis non quasi quo sint voluptatum numquam itaque enim magni dolorem!</p>
+                <button class="btn btn-success">Learn More</button>
+            </div>
+            <div>
+                <img src="./assets/pana.png" width="500" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------ Another-2 ---------------------------------------->
+    <div class="another-2">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="./assets/image 9.png" alt="">
+                </div>
+                <div class="col-12 col-md-8 px-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at consectetur, quam quae nisi
+                        cupiditate? Culpa quae temporibus similique quos voluptatem quidem sed officiis modi dolorem
+                        deleniti alias nostrum explicabo vero, error odio totam corrupti, deserunt nemo ad corporis?
+                        Maxime fugiat corporis a quae repellendus nulla quod soluta aspernatur. Saepe ex iure totam
+                        rerum, omnis ut officia exercitationem similique dolores ad aperiam eveniet eum deleniti
+                        praesentium et reprehenderit tempora aspernatur. Voluptates fugit ratione ullam autem libero
+                        expedita molestiae impedit doloribus eum, consectetur corrupti, tempora quisquam amet sunt quasi
+                        officiis labore distinctio quam illo numquam laborum nihil! Tempora non sit neque!</p>
+                    <h5 class="fw-bold mt-2">Tim Smith</h5>
+                    <p>British Dragon Boat Racing Association</p>
+                    <div class="row mt-2">
+                        <div class="col-12 col-md-8 d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="./assets/Logo(1).png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/Logo-1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/Logo-2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/Logo-3.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/Logo-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mt-md-0 d-flex align-items-center">
+                            <a href="#" class="d-flex align-items-center">
+                                <h5 class="fw-bold fs-6 mb-0">Meet all customers </h5>
+                                <i class="ms-2 fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------ Caring ---------------------------------------->
+    <div class="container my-5 caring">
+        <h1 class="fw-semibold text-center">Caring is the new marketing</h1>
+        <p class="mt-4 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, magni, ipsum
+            culpa modi quisquam magnam debitis cumque neque dignissimos quam consequuntur veniam aspernatur nobis illum
+            dolor quibusdam! Cupiditate neque fugiat laboriosam molestiae, accusamus animi enim molestias blanditiis,
+            laudantium sint culpa.</p>
+        <div class="card my-5">
+            <div>
+                <img src="./assets/image 18.png" alt="">
+                <div class="card-absolute shadow-lg">
+                    <h5 class="fw-semibold">Creating Steamlined Safeguarding Processes with OneRen</h5>
+                    <a href="#" class="fw-semibold fs-6">Readmore <i class="ms-2 fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/image 19.png" alt="">
+                <div class="card-absolute shadow-lg">
+                    <h5 class="fw-semibold">What are your safeguarding responsibiities and how can you manage them?</h5>
+                    <a href="#" class="fw-semibold fs-6">Readmore <i class="ms-2 fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/image 20.png" alt="">
+                <div class="card-absolute shadow-lg">
+                    <h5 class="fw-semibold">Revamping the Membership Model with Triathlon Australia</h5>
+                    <a href="#" class="fw-semibold fs-6">Readmore <i class="ms-2 fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------ Footer ---------------------------------------->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p class="fw-semibold">Copyright © 2024 Landify UI Kit. <br>
+                        All rights reserved.</p>
+                    <div class="mt-3 mt-md-5 d-flex flex-row gap-4 align-items-center">
+                        <a href="#">
+                            <div class="social">
+                                <img src="./assets/Path.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./assets/Path-1.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./assets/Path-2.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="social">
+                                <img src="./assets/Path_1.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 mt-4 mt-md-0 col-md-2">
+                    <h4 class="fw-semibold">Company</h4>
+                    <ul class="mt-4">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-4 mt-md-0 col-md-2">
+                    <h4 class="fw-semibold">Support</h4>
+                    <ul class="mt-4">
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-4 mt-md-0 col-md-4 position-relative">
+                    <h4 class="fw-semibold">Stay up to date</h4>
+                    <div class="mt-4 d-flex align-items-center justify-content-end">
+                        <input type="text" placeholder="Your email address">
+                        <i class="position-absolute fa-solid fa-paper-plane"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
